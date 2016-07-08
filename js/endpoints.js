@@ -17,7 +17,7 @@ var endPoints = [
           callback(out);
         }
         return;
-      });
+      }, true);
     },
 
   function(callback) { // Function to get data
@@ -49,7 +49,7 @@ var endPoints = [
           }
         }
         return;
-      }, false);
+      });
     },
 
   function(callback) { // Function to get data
@@ -68,7 +68,7 @@ var endPoints = [
           callback(out);
         }
         return;
-      }, false);
+      });
     }
 
 ];
