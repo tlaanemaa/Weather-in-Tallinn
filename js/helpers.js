@@ -8,7 +8,7 @@ var h = (function(){
 	// Callback should accept two inputs, err and data (function(err, data){...})
 	// This uses jsonp.afeld.me proxy to get around same origin policy
 	out.getJSON = function(url, callback, proxy) {
-		if(proxy === undefined) proxy = true; // Set default value
+		if(proxy === undefined) proxy = false; // Set default value
 		var req;
 
 		// Add proxy to URL if needed
@@ -50,7 +50,7 @@ var h = (function(){
 	// A function to make JSONP queries work like regular AJAX
 	// This uses jsonp.afeld.me proxy to make JSONP work with all APIs
 	out.getJSONP = function(url, callback, proxy) {
-		if(proxy === undefined) proxy = true; // Set default value
+		if(proxy === undefined) proxy = false; // Set default value
 		var elem, uid;
 
 		// Generate a UID for the new tag and it's callback
