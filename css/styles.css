@@ -53,9 +53,9 @@ div.weatherCont {
 div.weatherCont.shown {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: translate(0%, -10px);
-      -ms-transform: translate(0%, -10px);
-          transform: translate(0%, -10px);
+  -webkit-transform: translate(0%, 0px);
+      -ms-transform: translate(0%, 0px);
+          transform: translate(0%, 0px);
 }
 
 div.weatherCont > a.name {
